@@ -170,7 +170,8 @@ i.fa
 header{
     background: #7a007e;
     height: 200px;
-    width: 100%;
+    width: auto;
+    position: relative;
     
 }
 .enlace{
@@ -178,11 +179,15 @@ header{
     padding: 20px 50px;
 }
 .logo{
-    
-    height: 170px;
+
+    height: auto; 
+    max-height: 150px;
+    width: auto;
+    max-width:200px;
     top: auto;
     left: auto;
     right: auto;
+  
     
 }
 nav ul{
@@ -268,9 +273,10 @@ section{
 
  /* slider pag noticias */
 .slidershow{
-    width: 2000px;
-    height: 600px;
+    width: 1500px;
+    height: 500px;
     overflow: hidden;
+    margin-top: 2%
   }
   .middle{
     position: absolute;
@@ -339,23 +345,27 @@ section{
 
   
   #form {
-    position: relative;
+    position: center;
     width: 500px;
-    margin: 50px auto 100px auto;
+    margin: 10px auto 10px auto;
+    margin-left: 30px;
+    margin-right: 10px;
+    
+    
   }
   
   input {
     font-family: 'Silkscreen', cursive;
     font-size: 0.875em;
-    width: 470px;
+    width: 700px;
     height: 50px;
     padding: 0px 15px 0px 15px;
     
     background: transparent;
     outline: none;
-    color: #5ecee4;
+    color: #fbfbfb;
     
-    border: solid 2px #5ecee4;
+    border: solid 2px rgb(241, 9, 195);
     border-bottom: none;
     
     transition: all 0.3s ease-in-out;
@@ -366,12 +376,12 @@ section{
   
   input:hover {
     background: #f23da1;
-    color: #5ecee4;
+    color: #f6f6f6;
   }
   
   textarea {
-    width: 470px;
-    max-width: 470px;
+    width: 700px;
+    max-width: 700px;
     height: 110px;
     max-height: 110px;
     padding: 15px;
@@ -379,11 +389,11 @@ section{
     background: transparent;
     outline: none;
     
-    color: #5ecee4;
+    color: #f6f6f6;
     font-family: 'Silkscreen', cursive;
     font-size: 0.875em;
     
-    border: solid 2px #5ecee4;
+    border: solid 2px rgb(241, 9, 195);
     
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -393,29 +403,29 @@ section{
   
   textarea:hover {
     background: #f23da1;
-    color: #5ecee4;
+    color: #f6f6f6;
    
   }
   
   #submit {
-    width: 502px;
+    width: 700px;
     
     padding: 0;
     margin: -5px 0px 0px 0px;
     
     font-family: 'Silkscreen', cursive;
     font-size: 0.875em;
-    color: #5ecee4;
+    color: #f6f6f6;
     
     outline:none;
     cursor: pointer;
     
-    border: solid 2px #5ecee4;
+    border: solid 2px rgb(241, 9, 195);
     border-top: none;
   }
   
   #submit:hover {
-    color: #5ecee4;
+    color: #f6f6f6;
     border: solid 5px
   }
   /* fin de formulario css*/
@@ -428,13 +438,14 @@ section{
     margin-top: 100px;
     font-weight: 100;
   }
-  {}
   .containernoticias{
     width:100% ;
     max-width: 1200px;
     height: 430px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     justify-content: center;
     margin: auto;
   }
@@ -478,4 +489,30 @@ font-weight: 300;
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
+}
+
+.tutu {
+  text-align: center;
+}
+.text {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  line-height: 2;
+  background-color: rgb(107, 63, 130);
+}
+
+.text2{
+color: #f6f6f6;
+} 
+.text3 {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  line-height: 2;
+  background-color: rgb(107, 63, 130);
+}
+#map {
+  width: 100%;
+  height: 100%;
 }
