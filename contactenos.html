@@ -1,172 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="proyecto.css">
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" src="imagenes/FAVICON.ico">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="icon" href="Imagenes/favicon.ico" type="image/vnd.microsoft.icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" src="/imagenes/favicon.ico" />
+
+    <link rel="stylesheet" href="css/proyecto.css" />
+
     <title>PLAYGAME</title>
-    
+  </head>
 
-</head>
-</div>
-<body>
-
+  <body onload="getData()">
     <header>
-        <nav>
-        
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="#" class="enlace">
-                
-                <img src="Imagenes/Logo_Sencillo_Neon_para_pagina.png" alt="" class="logo" >
-                
-                
-            </a>
-    
-        <ul>
-                
-            <a href="main.html" class="btn-neon">
-            <span id="span1"></span>
+      <nav>
+        <a href="#" class="enlace">
+          <img
+            src="/imagenes/Logo_Sencillo_Neon_para_pagina.png"
+            alt=""
+            class="logo"
+          />
+        </a>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="navbar">
+          <a href="index.html" class="btn-neon">
+            <!-- <span id="span1"></span>
             <span id="span2"></span>
             <span id="span3"></span>
-            <span id="span4"></span>
+            <span id="span4"></span> -->
             Inicio
-        
-        </a>
-        <a href="juegos.html" class="btn-neon">
-            <span id="span1"></span>
+          </a>
+          <a href="juegos.html" class="btn-neon">
+            <!-- <span id="span1"></span>
             <span id="span2"></span>
             <span id="span3"></span>
-            <span id="span4"></span>
+            <span id="span4"></span> -->
             Noticias
-        </a>
-        <a href="videos.html" class="btn-neon">
-            <span id="span1"></span>
+          </a>
+          <a href="videos.html" class="btn-neon">
+            <!-- <span id="span1"></span>
             <span id="span2"></span>
             <span id="span3"></span>
-            <span id="span4"></span>
+            <span id="span4"></span> -->
             Videos
-        </a>
-        <a href="eventos.html" class="btn-neon">
-            <span id="span1"></span>
+          </a>
+          <a href="eventos.html" class="btn-neon">
+            <!-- <span id="span1"></span>
             <span id="span2"></span>
             <span id="span3"></span>
-            <span id="span4"></span>
+            <span id="span4"></span> -->
             Eventos
-        </a>
-        <a href="contactenos.html" class="btn-neon">
-            <span id="span1"></span>
+          </a>
+          <a href="contactenos.html" class="btn-neon">
+            <!-- <span id="span1"></span>
             <span id="span2"></span>
             <span id="span3"></span>
-            <span id="span4"></span>
+            <span id="span4"></span> -->
             Sobre Nosotros
-        </a>
+          </a>
         </ul>
-    
-  </div>
-            
-        </nav>
-
+      </nav>
     </header>
-<br>
-<div class="text">
-    <div class="text2">
-        <h2> Qué somos </h2> 
-    </div>
-    <p> Play-Game es una página especializada en videojuegos, tanto para consolas como para PC y dispositivos móviles. Un equipo de periodistas y profesionales a los que, por encima de todas las cosas, les gusta disfrutar con los juegos. Un medio donde la opinión de los lectores es lo más importante y además, cuenta de verdad. 
-        Nos ocupamos tanto de contar de manera rigurosa y con pasión la actualidad de los videojuegos, como de analizar en profundidad los principales lanzamientos y compararlos con otros modelos similares. 
-        Somos una página abierta siempre a las ideas nuevas y a todo tipo de jugadores. 
-        Una comunidad que se construye en equipo y que gira alrededor del videojuego.
-        <br> Play-Game es pasión por un futuro que ya se ha hecho realidad - </p>
-</div>
-<br>
-<div class="text">
-    <div class="text2">
-        <h2> Qué hacemos </h2>
+    <br />
+
+    <div class="content">
+      <h2 id="welcome" style="text-align: center;"></h2>
+      <br>
+      <div class="text">
+        <h2 class="text-white">Qué somos</h2>
+        <hr />
+        <p>
+          Play-Game es una página especializada en videojuegos, tanto para
+          consolas como para PC y dispositivos móviles. Un equipo de periodistas
+          y profesionales a los que, por encima de todas las cosas, les gusta
+          disfrutar con los juegos. Un medio donde la opinión de los lectores es
+          lo más importante y además, cuenta de verdad. Nos ocupamos tanto de
+          contar de manera rigurosa y con pasión la actualidad de los
+          videojuegos, como de analizar en profundidad los principales
+          lanzamientos y compararlos con otros modelos similares. Somos una
+          página abierta siempre a las ideas nuevas y a todo tipo de jugadores.
+          Una comunidad que se construye en equipo y que gira alrededor del
+          videojuego. <br />
+          Play-Game es pasión por un futuro que ya se ha hecho realidad
+        </p>
+      </div>
+      <br />
+      <div class="text">
+        <h2 class="text-white">Qué hacemos</h2>
+        <hr />
+        <p>
+          Play-Game tenemos como objetivo ser el lugar donde se reúna entorno al
+          videojuego una de las mayores comunidades de habla hispana de todo
+          internet. Un sitio donde debatir sobre los temas más dispares y
+          conocer a gente que acabarán convirtiéndose en nuestros amigos para
+          toda la vida. Tenemos especial énfasis en crear contenido de calidad,
+          ya sea en texto, en vídeo o en directo a través de nuestras redes
+          sociales. Queremos que aquí se pueda hablar principalmente de
+          videojuegos, claro, pero también sobre cine, anime, deportes y todos
+          los tipos de entretenimiento que se nos ocurran. Entra, relájate y
+          disfruta. <br />
+          Play-Game pretende ser objetiva e independiente y mantenerse ajena a
+          presiones comerciales o intereses privados.
+        </p>
+        <br />
+      </div>
+      <br />
+      <div class="text">
+        <h2 class="text-white">Quiénes somos</h2>
+        <hr />
+        <p>
+          Dirección: Camila Palomeque
+          <br />
+          Editor Actualidad y Redes Sociales: Oriana Carrizo
+          <br />
+          Editor Análisis y departamento de vídeo: Martín Bermúdez
+        </p>
+        <br />
+      </div>
+      <br />
+      <div class="contact">
+        <div class="text location">
+          <h2 class="text-white">Dónde estamos</h2>
+          <p>Nuestras oficinas están ubicadas AQUÍ:</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13129.539008078495!2d-58.524857966329314!3d-34.64498498717923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc850a8ddd4a1%3A0x6923689fbcc4f458!2sLiniers%2C%20CABA!5e0!3m2!1ses!2sar!4v1666671068901!5m2!1ses!2sar"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-    <p> Play-Game tenemos como objetivo ser el lugar donde se reúna entorno al videojuego una de las mayores comunidades de habla hispana de todo internet. Un sitio donde debatir sobre los temas más dispares y conocer a gente que acabarán convirtiéndose en nuestros amigos para toda la vida.
-        Tenemos especial énfasis en crear contenido de calidad, ya sea en texto, en vídeo o en directo a través de nuestras redes sociales.
-        Queremos que aquí se pueda hablar principalmente de videojuegos, claro, pero también sobre cine, anime, deportes y todos los tipos de entretenimiento que se nos ocurran. Entra, relájate y disfruta.
-        <br> Play-Game pretende ser objetiva e independiente y mantenerse ajena a presiones comerciales o intereses privados. - </p>
-        <br>
-</div>
-<br>
-<div class="text3">
-    <br>
-    <div class="text2">
-    <h2> Quiénes somos </h2>
-    </div>
-    <p> Dirección: Camila Palomeque
-        <br> 
-        Editor Actualidad y Redes Sociales: Oriana Carrizo
-        <br>
-        Editor Análisis y departamento de vídeo: Martín Bermúdez </p>
-<br>
-</div>
-<br>
-<div class="text3">
-    <br>
-    <div class="text2">
-    <h2> Dónde estamos </h2>
-    </div>
-    <p> Nuestras oficinas estan ubicadas AQUÍ: </p>
-<div id="map">
-<script src="script.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-</div>
-<br>
-<div class="text3">
-    <div class="text2">
-        <br>
-        <h2> Contáctanos </h2>
-    </div>
 
-    <form id="form" class="topBefore">
-            
-        <input id="name" type="text" placeholder="NOMBRE"> <br>
-        <input type="text" placeholder="EMAIL" name="correo" id="correo">
-        <input type="button" value="Validar Mail" onClick="pruebaemail(correo.value);"><br>
-        <textarea id="message" type="text" placeholder="MENSAJE"></textarea>
-        <br> <input id="submit" type="submit" value="GO!">
+        <div class="text contact-box">
+          <h2 class="text-white">Contáctenos</h2>
+          <p>Suscribite para recibir las últimas novedades.</p>
 
-</form>
-<br>
-</div>
-    
-    <section></section>
-       
+          <form class="contact-form">
+            <input id="name" type="text" placeholder="NOMBRE" required />
+            <input
+              type="text"
+              placeholder="EMAIL"
+              name="correo"
+              id="correo"
+              onchange="pruebaEmail(correo.value)"
+              required
+            />
+            <label for="correo" id="email_validate"></label>
+            <textarea
+              id="message"
+              type="text"
+              placeholder="MENSAJE"
+              required
+            ></textarea>
+
+            <button class="submit" type="submit">Go!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <section class="altura-footer"></section>
     <footer>
-    
-        <div class="container">
-            <div class="btn fb-btn">
-                
-              <a href="Working.html"><i class="fa fa-facebook" aria-hidden="true" id="fb"></i></a>
-                
-            </div>
-            <div class="btn ig-btn">
-                <a href="Working.html"><i class="fa fa-instagram" aria-hidden="true" id="ig"></i></a>
-            </div>
-            <div class="btn tw-btn">
-                <a href="Working.html"><i class="fa fa-twitter" aria-hidden="true" id="tw"></i></a>
-            </div>
-    
-    
-    
-    
+      <div class="container">
+        <div class="btn fb-btn">
+          <a href="Working.html"
+            ><i class="fa fa-facebook" aria-hidden="true" id="fb"></i
+          ></a>
+        </div>
+        <div class="btn ig-btn">
+          <a href="Working.html"
+            ><i class="fa fa-instagram" aria-hidden="true" id="ig"></i
+          ></a>
+        </div>
+        <div class="btn tw-btn">
+          <a href="Working.html"
+            ><i class="fa fa-twitter" aria-hidden="true" id="tw"></i
+          ></a>
+        </div>
+      </div>
     </footer>
-            
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
